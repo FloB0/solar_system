@@ -29,6 +29,9 @@ function App() {
     const planetDict = exportPlanetDict;
     console.log(Object.keys(planetDict).length);
 
+    /*
+    Creates a sphere with geometry input, material input and its initial coordinates X,Y,Z
+    */
     function createPlanet(geometryInput, matInput, initialX, initialY, initialZ){
       const sphereGeometry = new THREE.SphereGeometry(geometryInput);
       const sphereMaterial = new THREE.MeshNormalMaterial(matInput);
